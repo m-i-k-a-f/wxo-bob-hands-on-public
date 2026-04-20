@@ -1,149 +1,111 @@
-# watsonx Orchestrate セットアップガイド
+# watsonx Orchestrate 環境構築ガイド
 
-IBM Bob と watsonx Orchestrate を使った開発環境のセットアップガイドです。
+IBM Bob と watsonx Orchestrate の開発環境をセットアップする
 
-## 📚 概要
+---
 
-このリポジトリは、ブラウザ閲覧型のセットアップガイドです。
-IBM Bob、watsonx Orchestrate、MCP、ContentIQ の環境構築手順を提供します。
+## 📋 目次
 
-### 📖 ガイド構成
+- [このガイドについて](#このガイドについて)
+- [セットアップ手順](#セットアップ手順)
+  - [1. IBM Bobのセットアップ](#1-ibm-bobのセットアップ)
+  - [2. watsonx Orchestrateのセットアップ](#2-watsonx-orchestrateのセットアップ)
+  - [3. MCP統合のセットアップ](#3-mcp統合のセットアップ)
+  - [4. ContentIQのセットアップ](#4-contentiqのセットアップ)
+- [参考リンク](#参考リンク)
 
-ガイドは以下の構成になっています：
+---
 
-1. **[環境構築ガイド](setup/index.html)** - すべてのセットアップ手順を網羅
-2. **個別セットアップページ** - 各コンポーネントの詳細手順
+## このガイドについて
 
-## 🎯 学べること
+### 環境構築の目的
 
-- IBM Bob のセットアップと基本設定
-- watsonx Orchestrate の利用開始と ADK の導入
-- MCP (Model Context Protocol) の設定方法
-- IBM ContentIQ の環境構築
+このガイドでは、watsonx Orchestrateを使ったAIエージェント開発に必要な環境を構築します。
 
-## 🚀 クイックスタート
+### セットアップする環境
+
+- ✅ IBM Bob（AI開発アシスタント）
+- ✅ watsonx Orchestrate（AIエージェントプラットフォーム）
+- ✅ MCP（Model Context Protocol）統合
+- ✅ ContentIQ（RAGシステム用）
 
 ### 前提条件
 
-- Visual Studio Code
-- IBM Bob を利用できる環境
-- IBM Cloud アカウント
-- watsonx Orchestrate を利用できる環境
-- ブラウザ
-- ローカルで静的ファイルを配信できる環境  
-  例: Python の簡易HTTPサーバー、または Node.js の [`http-server`](https://www.npmjs.com/package/http-server)
+- Visual Studio Code がインストールされていること
+- IBM Cloud アカウントを持っていること
+- watsonx Orchestrate へのアクセス権があること
+- 基本的なコマンドライン操作の知識
 
-### ガイドの開き方
+### 所要時間
 
-1. このリポジトリをローカルに配置
-2. 任意の方法でローカルサーバーを起動
-3. ブラウザで [`setup/index.html`](setup/index.html) を開く
+⏱️ 約60〜90分
 
-#### 例: Python を使う場合
+---
 
-```bash
-python -m http.server 8010
-```
+## セットアップ手順
 
-#### 例: Node.js を使う場合
+### 1. IBM Bobのセットアップ
 
-```bash
-npx http-server -p 8010
-```
+IBM Bobは、VS Code拡張機能として提供されるAI開発アシスタントです。
 
-起動後、以下にアクセスします。
+**セットアップ内容：**
+- VS Code拡張機能のインストール
+- IBM Cloudアカウントとの連携
+- 基本設定の確認
 
-```text
-http://localhost:8010
-```
+📖 **[詳細ガイドを見る →](setup_md/bob-setup.md)**
 
-## 📖 ガイド構成
+---
 
-### 環境構築ガイド
+### 2. watsonx Orchestrateのセットアップ
 
-**統合ガイド:** [setup/index.html](setup/index.html)
-- すべてのセットアップ手順を1つのページで確認
-- ステップバイステップの説明
-- トラブルシューティング情報
-- 所要時間の目安
+watsonx Orchestrateの環境を準備し、ADK（Agent Development Kit）をインストールします。
 
-**個別セットアップページ:**
-- [Bob セットアップ](setup/bob-setup.html)
-- [watsonx Orchestrate セットアップ](setup/orchestrate-setup.html)
-- [MCP セットアップ](setup/mcp-setup.html)
-- [ContentIQ セットアップ](setup/contentiq-setup.html)
+**セットアップ内容：**
+- watsonx Orchestrateへのアクセス確認
+- APIキーの取得
+- ADKのインストール
+- 接続テスト
 
-## 🛠️ 技術要素
+📖 **[詳細ガイドを見る →](setup_md/orchestrate-setup.md)**
 
-- IBM Bob
-- watsonx Orchestrate
-- watsonx Orchestrate ADK
-- MCP (Model Context Protocol)
-- IBM ContentIQ
-- Python
-- HTML / CSS / JavaScript
+---
 
-## 📁 ディレクトリ構成
+### 3. MCP統合のセットアップ
 
-```text
-wxo-bob-hands-on-public/
-├── README.md
-└── setup/
-    ├── index.html
-    ├── bob-setup.html
-    ├── orchestrate-setup.html
-    ├── mcp-setup.html
-    └── contentiq-setup.html
-```
+Model Context Protocol (MCP) を使ってBobとwatsonx Orchestrateを統合します。
 
-## 🧪 セットアップの進め方
+**セットアップ内容：**
+- MCP Serverのインストール
+- Bob設定ファイルの編集
+- 接続の確認
+- 基本的な動作テスト
 
-### 推奨される手順
+📖 **[詳細ガイドを見る →](setup_md/mcp-setup.md)**
 
-1. **[環境構築ガイド](setup/index.html)** を開く
-2. 以下の順序でセットアップを実施：
-   - Bob のセットアップ
-   - watsonx Orchestrate と ADK のセットアップ
-   - MCP の設定
-   - ContentIQ の準備
+---
 
-### 特定のステップのみ確認したい方
+### 4. ContentIQのセットアップ
 
-[setup/](setup/) 内の個別ページを直接参照してください。
+Watson Discovery (ContentIQ) を使ってRAGシステムを構築します。
 
-## 🔗 参考リンク
+**セットアップ内容：**
+- ContentIQインスタンスの作成
+- APIキーの取得
+- プロジェクトの作成
+- 接続設定
+
+📖 **[詳細ガイドを見る →](setup_md/contentiq-setup.md)**
+
+---
+
+## 参考リンク
 
 - [watsonx Orchestrate ADK インストールガイド](https://developer.watson-orchestrate.ibm.com/getting_started/installing)
 - [MCP in Bob](https://bob.ibm.com/docs/ide/configuration/mcp/mcp-in-bob)
 - [Model Context Protocol 公式サイト](https://modelcontextprotocol.io/)
 - [IBM Cloud](https://cloud.ibm.com/)
 
-## 🎓 ガイドの使い分け
-
-### 環境構築ガイド ([setup/index.html](setup/index.html))
-
-**こんな時に使用:**
-- 初めて環境をセットアップする
-- すべてのセットアップ手順を順番に確認したい
-- セットアップ全体の所要時間を知りたい
-- トラブルシューティング情報をまとめて確認したい
-
-### 個別セットアップページ
-
-**こんな時に使用:**
-- 特定のセットアップステップのみを確認したい
-- 詳細な手順を確認したい
-- 特定のコンポーネントの設定を見直したい
-
-## 📝 補足
-
-このセットアップガイドは、2つの階層で構成されています：
-
-1. **統合ガイド** ([setup/index.html](setup/index.html)) - セットアップ全体の流れ
-2. **個別ページ** - 各コンポーネントの詳細手順
-
-この構造により、初心者は統合ガイドで全体の流れを把握しながらセットアップでき、経験者は個別ページで必要な情報に素早くアクセスできます。
-
 ---
 
-最終更新: 2026-04-17
+© 2026 IBM watsonx Orchestrate セットアップガイド
