@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>環境構築ガイド - watsonx Orchestrate ハンズオン</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-cog"></i>
+                <span>環境構築ガイド</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#overview">概要</a></li>
+                <li><a href="#setup-steps">セットアップ手順</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1><i class="fas fa-cog"></i> watsonx Orchestrate 環境構築ガイド</h1>
+            <p class="subtitle">IBM Bob と watsonx Orchestrate の開発環境をセットアップする</p>
+            <div class="hero-buttons">
+                <a href="#setup-steps" class="btn btn-primary">
+                    <i class="fas fa-play"></i> セットアップを始める
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 概要セクション -->
+        <section id="overview" class="section">
+            <h2><i class="fas fa-info-circle"></i> このガイドについて</h2>
+            <div class="card">
+                <h3>環境構築の目的</h3>
+                <p>このガイドでは、watsonx Orchestrateを使ったAIエージェント開発に必要な環境を構築します。</p>
+                
+                <h4>セットアップする環境</h4>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> IBM Bob（AI開発アシスタント）</li>
+                    <li><i class="fas fa-check"></i> watsonx Orchestrate（AIエージェントプラットフォーム）</li>
+                    <li><i class="fas fa-check"></i> MCP（Model Context Protocol）統合</li>
+                    <li><i class="fas fa-check"></i> ContentIQ（RAGシステム用）</li>
+                </ul>
+
+                <h4>前提条件</h4>
+                <ul>
+                    <li>Visual Studio Code がインストールされていること</li>
+                    <li>IBM Cloud アカウントを持っていること</li>
+                    <li>watsonx Orchestrate へのアクセス権があること</li>
+                    <li>基本的なコマンドライン操作の知識</li>
+                </ul>
+
+                <h4>所要時間</h4>
+                <p><i class="fas fa-clock"></i> 約60〜90分</p>
+            </div>
+        </section>
+
+        <!-- セットアップ手順 -->
+        <section id="setup-steps" class="section">
+            <h2><i class="fas fa-list-ol"></i> セットアップ手順</h2>
+            
+            <div class="card">
+                <div class="step-indicator">
+                    <h3>1. IBM Bobのセットアップ</h3>
+                </div>
+                <p>IBM Bobは、VS Code拡張機能として提供されるAI開発アシスタントです。</p>
+                <ul>
+                    <li>VS Code拡張機能のインストール</li>
+                    <li>IBM Cloudアカウントとの連携</li>
+                    <li>基本設定の確認</li>
+                </ul>
+                <a href="bob-setup.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-right"></i> 詳細ガイドを見る
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="step-indicator">
+                    <h3>2. watsonx Orchestrateのセットアップ</h3>
+                </div>
+                <p>watsonx Orchestrateの環境を準備し、ADK（Agent Development Kit）をインストールします。</p>
+                <ul>
+                    <li>watsonx Orchestrateへのアクセス確認</li>
+                    <li>APIキーの取得</li>
+                    <li>ADKのインストール</li>
+                    <li>接続テスト</li>
+                </ul>
+                <a href="orchestrate-setup.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-right"></i> 詳細ガイドを見る
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="step-indicator">
+                    <h3>3. MCP統合のセットアップ</h3>
+                </div>
+                <p>Model Context Protocol (MCP) を使ってBobとwatsonx Orchestrateを統合します。</p>
+                <ul>
+                    <li>MCP Serverのインストール</li>
+                    <li>Bob設定ファイルの編集</li>
+                    <li>接続の確認</li>
+                    <li>基本的な動作テスト</li>
+                </ul>
+                <a href="mcp-setup.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-right"></i> 詳細ガイドを見る
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="step-indicator">
+                    <h3>4. ContentIQのセットアップ</h3>
+                </div>
+                <p>Watson Discovery (ContentIQ) を使ってRAGシステムを構築します。</p>
+                <ul>
+                    <li>ContentIQインスタンスの作成</li>
+                    <li>APIキーの取得</li>
+                    <li>プロジェクトの作成</li>
+                    <li>接続設定</li>
+                </ul>
+                <a href="contentiq-setup.html" class="btn btn-primary">
+                    <i class="fas fa-arrow-right"></i> 詳細ガイドを見る
+                </a>
+            </div>
+        </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 IBM watsonx Orchestrate セットアップガイド</p>
+            <p>
+                <a href="https://github.com/your-repo/wxo-bob-hands-on-public" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
