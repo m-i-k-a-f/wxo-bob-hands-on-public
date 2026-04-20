@@ -1,6 +1,6 @@
 # watsonx Orchestrateセットアップガイド
 
-AIオーケストレーションプラットフォームの環境構築
+AIオーケストレーションプラットフォームの環境構築を行います。
 
 ---
 
@@ -16,7 +16,7 @@ AIオーケストレーションプラットフォームの環境構築
 
 ## watsonx Orchestrateとは
 
-watsonx Orchestrateは、IBMが提供するAIオーケストレーションプラットフォームで、複数のAIエージェント、ツール、ワークフローを統合して、複雑なビジネスプロセスを自動化する。
+watsonx Orchestrateは、IBMが提供するAIオーケストレーションプラットフォームで、複数のAIエージェント、ツール、ワークフローを統合して、複雑なビジネスプロセスを自動化します。
 
 ### 主な機能
 
@@ -35,15 +35,15 @@ watsonx Orchestrateは、IBMが提供するAIオーケストレーションプ�
 ### ステップ1: IBM Cloudへの登録
 
 1. [IBM Cloud登録ページ](https://cloud.ibm.com/registration)にアクセス
-2. メールアドレスを入力して「次へ」をクリック
-3. IBM idがある場合は、そのままログインできる
-4. 確認メールが送信される
+2. メールアドレスを入力して「次へ」をクリックします
+3. IBM idがある場合は、そのままログインできます
+4. 確認メールが送信されます
 
 ### ステップ2: アカウントの確認とログイン
 
-1. [IBM Cloudコンソール](https://cloud.ibm.com/login)にログイン
-2. ダッシュボードが表示されることを確認
-3. 右上のアカウント名をクリックして、アカウント情報に間違いがないか確認
+1. [IBM Cloudコンソール](https://cloud.ibm.com/login)にログインします
+2. ダッシュボードが表示されることを確認します
+3. 右上のアカウント名をクリックして、アカウント情報に間違いがないか確認します
 
 ---
 
@@ -51,32 +51,32 @@ watsonx Orchestrateは、IBMが提供するAIオーケストレーションプ�
 
 ### 手順
 
-1. IBM Cloudにアクセス
-2. ①ハンバーガーメニューから②「リソースリスト」をクリック
+1. IBM Cloudにアクセスします
+2. ①ハンバーガーメニューから②「リソースリスト」をクリックします
 
    ![IBM Cloudリソースリスト](../images/wxo1.png)
 
-3. ①「AI/機械学習」のプルダウンをクリック、②「watsonx Orchestrate」をクリック
+3. ①「AI/機械学習」のプルダウンをクリック、②「watsonx Orchestrate」をクリックします
 
    ![watsonx Orchestrate リスト](../images/wxo2.png)
 
-4. ①資格情報の「APIキー」と「URL」を控え、②「watsonx Orchestrateを起動」をクリック
+4. ①資格情報の「APIキー」と「URL」を控え、②「watsonx Orchestrateを起動」をクリックします
 
    ![watsonx Orchestrate 起動画面](../images/wxo3.png)
 
-5. watsonx Orchestrateが起動する。画面の言語を日本語に変えるために、①右上のプロフィールから、②「Setting」をクリック
+5. watsonx Orchestrateが起動します。画面の言語を日本語に変えるために、①右上のプロフィールから、②「Setting」をクリックします
 
    ![watsonx Orchestrate 設定画面](../images/wxo4.png)
 
-6. ①「Platform Language」をクリック、②「Add language」のプルダウンをクリックし、③「日本語」をクリック
+6. ①「Platform Language」をクリック、②「Add language」のプルダウンをクリックし、③「日本語」をクリックします
 
    ![watsonx Orchestrate 設定画面](../images/wxo5.png)
 
-7. Saveし、①「English」のプルダウンをクリック、日本語をクリックしてApplyしたら完了
+7. Saveし、①「English」のプルダウンをクリック、日本語をクリックしてApplyしたら完了です
 
    ![watsonx Orchestrate 設定画面](../images/wxo6.png)
 
-8. 「APIの詳細」からも資格情報を取得することができる
+8. 「APIの詳細」からも資格情報を取得することができます
 
    ![watsonx Orchestrate 設定画面](../images/wxo7.png)
 
@@ -84,7 +84,7 @@ watsonx Orchestrateは、IBMが提供するAIオーケストレーションプ�
 
 ## watsonx Orchestrate ADKのセットアップ
 
-watsonx Orchestrate ADK（Agent Development Kit）は、エージェントを開発するためのツールキットである。
+watsonx Orchestrate ADK（Agent Development Kit）は、エージェントを開発するためのツールキットです。
 
 ### 📚 ADKセットアップガイド
 
@@ -101,14 +101,14 @@ watsonx Orchestrate ADK（Agent Development Kit）は、エージェントを開
 ### ⚠️ 重要なポイント
 
 **注意事項：**
-- ADKのインストールには、watsonx Orchestrateの有効なアカウントが必要である
-- APIキーは前のセクションで取得したものを使用すること
+- ADKのインストールには、watsonx Orchestrateの有効なアカウントが必要です
+- APIキーは前のセクションで取得したものを使用してください
 
 ---
 
 ## 次のステップ
 
-watsonx Orchestrateのセットアップが完了した。次は、MCPを使ってBobと統合する。
+watsonx Orchestrateのセットアップが完了しました。次は、MCPを使ってBobと統合します。
 
 ➡️ **[MCP統合セットアップへ](mcp-setup.md)**
 

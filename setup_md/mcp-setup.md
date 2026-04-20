@@ -1,6 +1,6 @@
 # MCP統合セットアップガイド
 
-BobでMCPツールを管理する方法
+BobでMCPツールを管理する方法を説明します。
 
 ---
 
@@ -15,7 +15,7 @@ BobでMCPツールを管理する方法
 
 ## MCPとは
 
-Model Context Protocol (MCP)は、AIモデルと外部ツール・システムを標準化された方法で接続するためのオープンプロトコルである。IBM BobはMCPをサポートしており、watsonx Orchestrateとシームレスに統合できる。
+Model Context Protocol (MCP)は、AIモデルと外部ツール・システムを標準化された方法で接続するためのオープンプロトコルです。IBM BobはMCPをサポートしており、watsonx Orchestrateとシームレスに統合できます。
 
 > 💡 **詳細情報:** MCPの詳細については、[公式ドキュメント](https://bob.ibm.com/docs/ide/configuration/mcp/mcp-in-bob)を参照してください。
 
@@ -23,23 +23,23 @@ Model Context Protocol (MCP)は、AIモデルと外部ツール・システム�
 
 ## 個別のMCPツールを有効または無効にする
 
-BobでMCPサーバーを設定すると、そのサーバーが提供するすべてのツールがデフォルトで有効になる。
+BobでMCPサーバーを設定すると、そのサーバーが提供するすべてのツールがデフォルトで有効になります。
 
 ### 手順
 
-1. Bobを起動して、右上の設定を開く
+1. Bobを起動して、右上の設定を開きます
 
    ![IBM bob設定画面](../images/bob1.png)
 
-2. ①「MCP」をクリック、②検索窓で「orchestrate」と検索して出てくる2つのMCPを接続する
+2. ①「MCP」をクリック、②検索窓で「orchestrate」と検索して出てくる2つのMCPを接続します
 
    ![IBM bob設定画面](../images/bob2.png)
 
-3. 「watsonx Orchestrate ADK Docs MCP」をインストール
+3. 「watsonx Orchestrate ADK Docs MCP」をインストールします
 
    ![IBM bob設定画面](../images/bob3.png)
 
-4. 「watsonx Orchestrate ADK MCP」をインストールする。「インストール方法」で「Latest ADK Version」を選び、インストール
+4. 「watsonx Orchestrate ADK MCP」をインストールします。「インストール方法」で「Latest ADK Version」を選び、インストールします
 
    ![IBM bob設定画面](../images/bob4.png)
 
@@ -47,7 +47,7 @@ BobでMCPサーバーを設定すると、そのサーバーが提供するす�
 
 ## 次のステップ
 
-MCP設定が完了した。次は、ContentIQをセットアップする。
+MCP設定が完了しました。次は、ContentIQをセットアップします。
 
 ➡️ **[ContentIQセットアップガイド](contentiq-setup.md)**
 

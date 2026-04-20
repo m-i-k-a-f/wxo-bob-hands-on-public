@@ -1,6 +1,6 @@
 # ContentIQセットアップガイド
 
-ナレッジベース構築
+ナレッジベース構築を行います。
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## ContentIQとは
 
-ContentIQは、symplistick.aiが提供する、RAG構築ソリューションである。
+ContentIQは、symplistick.aiが提供する、RAG構築ソリューションです。
 
 ### 主な機能
 
@@ -30,13 +30,13 @@ ContentIQは、symplistick.aiが提供する、RAG構築ソリューションで
 
 ### 手順
 
-1. ContentIQにアクセス
+1. ContentIQにアクセスします
    
    **URL:** [https://contentiq.symplistic.ai](https://contentiq.symplistic.ai)
 
-2. 初めてログインする場合は、watsonx Orchestrateの認証情報(APIキーとURL)の入力を求められるので、控えたものを入力する
+2. 初めてログインする場合は、watsonx Orchestrateの認証情報(APIキーとURL)の入力を求められるので、控えたものを入力します
 
-3. ContentIQのホーム画面が表示されたら、ログインが完了
+3. ContentIQのホーム画面が表示されたら、ログインが完了です
 
 ---
 
@@ -44,23 +44,23 @@ ContentIQは、symplistick.aiが提供する、RAG構築ソリューションで
 
 ### 手順
 
-1. ContentIQのHomeから、「Administrative Setting」をクリック
+1. ContentIQのHomeから、「Administrative Setting」をクリックします
 
    ![ContentIQ Home](../images/ciq1.png)
 
-2. 「Role Setting」では「Administrator」や「Member」など権限のレベルを設定できる
+2. 「Role Setting」では「Administrator」や「Member」など権限のレベルを設定できます
 
    ![ContentIQ Home](../images/ciq2.png)
 
-3. 「Account Assignments」ではメンバーの追加や削除ができる。新規追加をするには、「Add New User」をクリック
+3. 「Account Assignments」ではメンバーの追加や削除ができます。新規追加をするには、「Add New User」をクリックします
 
    ![ContentIQ Home](../images/ciq3.png)
 
-4. メールアドレスを入力し、適切なRoleを割り当てて「invite User」をクリック
+4. メールアドレスを入力し、適切なRoleを割り当てて「invite User」をクリックします
 
    ![ContentIQ Home](../images/ciq4.png)
 
-5. 追加したメンバーにはメールが届く。24時間以内にActivateする必要がある
+5. 追加したメンバーにはメールが届きます。24時間以内にActivateする必要があります
 
    ![ContentIQ Home](../images/ciq5.png)
 
