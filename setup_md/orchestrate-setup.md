@@ -47,11 +47,21 @@ watsonx Orchestrateは、IBMが提供するAIオーケストレーションプ�
 
 ---
 
+## インスタンスの作成ガイド
+
+**URL:** [https://ibm.github.io/japan-technology/onboarding-docs/watsonx-orchestrate/01_instance/01_ibmcloud_login](https://ibm.github.io/japan-technology/onboarding-docs/watsonx-orchestrate/01_instance/01_ibmcloud_login)
+
++ サブスクリプションコードの適用
++ リソースグループの作成
++ インスタンスの作成
++ アクセス・グループの作成
++ アクセス・グループユーザーの追加(管理者以外のIBMidを追加)
+
 ## watsonx Orchestrateの起動確認
 
 ### 手順
 
-1. IBM Cloudにアクセスします
+1. IBM Cloudホームにアクセスします
 2. ①ハンバーガーメニューから②「リソースリスト」をクリックします
 
    ![IBM Cloudリソースリスト](../images/wxo1.png)
@@ -79,8 +89,7 @@ watsonx Orchestrateは、IBMが提供するAIオーケストレーションプ�
 8. 「APIの詳細」からも資格情報を取得することができます
 
    ![watsonx Orchestrate 設定画面](../images/wxo7.png)
-※ ユーザーの割り当てなどはこちらのガイドをご参照ください.  
-**URL:** [https://ibm.github.io/japan-technology/onboarding-docs/watsonx-orchestrate/01_instance/01_ibmcloud_login](https://ibm.github.io/japan-technology/onboarding-docs/watsonx-orchestrate/01_instance/01_ibmcloud_login)
+
 ---
 
 ## watsonx Orchestrate ADKのセットアップ

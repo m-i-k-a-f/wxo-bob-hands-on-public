@@ -25,6 +25,16 @@ ContentIQは、symplistick.aiが提供する、RAG構築ソリューションで
 - ✅ 多言語サポート
 
 ---
+## インスタンスの作成ガイド
+
+**URL:** [https://ibm.github.io/japan-technology/onboarding-docs/watsonx-orchestrate/01_instance/04_create_instance](https://ibm.github.io/japan-technology/onboarding-docs/watsonx-orchestrate/01_instance/04_create_instance)
+
+watsonx OrchestrateをContentIQに置き換えて、インスタンスを作成します。
+
+インスタンス作成が完了すると、以下のメールが届きます。
+
+![ContentIQ Start](../images/ciqstart.png)
+
 
 ## ContentIQの起動確認
 
