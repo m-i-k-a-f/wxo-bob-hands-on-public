@@ -57,7 +57,7 @@ watsonx Orchestrate公式ドキュメントを使ったRAG（Retrieval-Augmented
 + 「Finish & Connect」をクリックし、スクレイピング等を実行します
 ![ciq16のスクリーンショット](../images/ciq16.png)
 
-+ 実行中の画面
++ 実行中の画面。指定した「installing」で終わるリンクだけでなく、同じ階層にいる「what is」「examples」なども自動でスクレイピングしてくれることがわかります
 ![ciq17のスクリーンショット](../images/ciq17.png)
 
 + ①〜⑤がすべて緑色になったら完了です。「Open Chat Playground」をクリックして作成されたRAG検索ツールを触ってみましょう
@@ -132,4 +132,4 @@ ADKをアクティブにするためのコマンドを教えてください
 
 © 2026 IBM watsonx Orchestrate ハンズオン教材
 
-[ホームに戻る](../index.md) | [GitHub](https://github.com/your-repo/bob-hands-on)
+[ホームに戻る](../README.md) | [GitHub](https://github.com/your-repo/bob-hands-on)
