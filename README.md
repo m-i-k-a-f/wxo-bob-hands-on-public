@@ -12,6 +12,10 @@ IBM Bob と watsonx Orchestrate の開発環境をセットアップします。
   - [2. watsonx Orchestrateのセットアップ](#2-watsonx-orchestrateのセットアップ)
   - [3. MCP統合のセットアップ](#3-mcp統合のセットアップ)
   - [4. ContentIQのセットアップ](#4-contentiqのセットアップ)
+- [ハンズオンラボ](#ハンズオンラボ)
+  - [Lab 1: IT Support Agentの実装とデプロイ](#lab-1-it-support-agentの実装とデプロイ)
+  - [Lab 2: ContentIQでRAG構築](#lab-2-contentiqでrag構築)
+  - [参考: ITサポートエージェント仕様書](#参考-itサポートエージェント仕様書)
 - [参考リンク](#参考リンク)
 
 ---
@@ -60,6 +64,34 @@ Model Context Protocol (MCP) を使ってBobとwatsonx Orchestrateを統合し�
 ContentIQを使ってRAGシステムを構築します。
 
 📖 **[詳細ガイドを見る →](setup_md/contentiq-setup.md)**
+
+---
+
+## ハンズオンラボ
+
+環境構築が完了したら、以下のハンズオンラボで実践的なスキルを習得できます。
+
+### Lab 1: IT Support Agentの実装とデプロイ
+
+Bobを使ってエージェントを実装し、watsonx Orchestrateにデプロイします。
+
+📖 **[Lab 1を始める →](labs/lab1-basic-agent.md)**
+
+---
+
+### Lab 2: ContentIQでRAG構築
+
+watsonx Orchestrate公式ドキュメントを使ったRAGシステムを構築します。
+
+📖 **[Lab 2を始める →](labs/lab2-contentiq.md)**
+
+---
+
+### 参考: ITサポートエージェント仕様書
+
+Lab 1で使用するITサポートエージェントの仕様書です。
+
+📖 **[仕様書を見る →](labs/WxO_it_support_draft_agent_spec_jp.md)**
 
 ---
 
