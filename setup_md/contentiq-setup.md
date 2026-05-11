@@ -52,7 +52,7 @@ watsonx OrchestrateをContentIQに置き換えて、インスタンスを作成�
 
 ## 管理者による設定
 
-### 手順
+### ユーザー追加手順
 
 1. ContentIQのHomeから、「Administrative Setting」をクリックします
 
@@ -74,6 +74,11 @@ watsonx OrchestrateをContentIQに置き換えて、インスタンスを作成�
 
    ![ContentIQ Home](../images/ciq5.png)
 
+### watsonx Orchestrateの設定
+
+1. ①「Setting」をクリック、②「watsonx Orchestrate」をクリックします。watsonx Orchestrateのセットアップで控えた、資格情報(URL、APIキー)を入力します
+
+   ![ContentIQ Home](../images/ciq6.png)
 ---
 
 ## セットアップ完了
