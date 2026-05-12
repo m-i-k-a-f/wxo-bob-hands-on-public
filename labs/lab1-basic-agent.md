@@ -93,7 +93,7 @@ it-support/
 #### 4.1. ターミナルでコマンドを実行
 
 ```bash
-orchestrate env active wxo-aws
+orchestrate env activate wxo-aws
 ```
 
 > **⚠️ 注意:** 環境名（`wxo-aws`）は、自身のwatsonx Orchestrate環境に合わせて変更すること。
@@ -146,7 +146,7 @@ Bobは以下の手順を自動的に実行します：
 + 実装したエージェント `it_support_agent` を選択する。
 ![ステップ6のスクリーンショット](../images/step6.png)
 
-#### 6.2. エージェントの追加
+#### 6.2. エージェントの追加(この手順はデプロイの際にエージェントが追加されている場合は不要です)
 
 以下のエージェントを`it_support_agent`に追加します。
 
