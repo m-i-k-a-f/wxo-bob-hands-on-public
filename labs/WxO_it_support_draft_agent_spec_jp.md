@@ -38,43 +38,43 @@ Watsonx Orchestrateで実行されるマルチエージェントITサポート�
 
 3つのエージェントを作成します：
 
-1. `incident_response_agent_MF`
-2. `pc_support_agent_MF`
-3. `it_support_agent_MF`（オーケストレーター）
+1. `incident_response_agent`
+2. `pc_support_agent`
+3. `it_support_agent`（オーケストレーター）
 
 ### 3. 各エージェントの詳細
 
-#### 3.1 incident_response_agent_MF
+#### 3.1 incident_response_agent
 
 **責任範囲：** 技術的な問題に関する質問への回答とインシデントチケットの作成
 
 **ツール：**
 
-##### a. check_open_incidents_MF()
+##### a. check_open_incidents()
 - **機能：** オープンまたは最近のITインシデントをリスト
 - **戻り値：** 現在オープンまたは注意が必要な最大3つのインシデント
 
-##### b. create_incident_ticket_MF()
+##### b. create_incident_ticket()
 - **機能：** 新しいITサポートケースを開く
 - **戻り値：** サンプルチケット番号を含む確認
 
-#### 3.2 pc_support_agent_MF
+#### 3.2 pc_support_agent
 
 **責任範囲：** PCのトラブルシューティングとソフトウェア関連の問題を支援
 
 **ツール：**
 
-##### a. diagnose_pc_issue_MF()
+##### a. diagnose_pc_issue()
 - **機能：** PC全般の問題（起動、パフォーマンス、エラー）を診断
 - **戻り値：** 診断結果と推奨される対処法
 
-##### b. check_software_compatibility_MF()
+##### b. check_software_compatibility()
 - **機能：** ソフトウェアの互換性とインストール状況を確認
 - **戻り値：** 互換性情報とインストール推奨事項
 
-#### 3.3 it_support_agent_MF
+#### 3.3 it_support_agent
 
-**責任範囲：** `incident_response_agent_MF`と`pc_support_agent_MF`をオーケストレート
+**責任範囲：** `incident_response_agent`と`pc_support_agent`をオーケストレート
 
 ## 4. ツールの実装
 
