@@ -63,7 +63,7 @@ watsonx Orchestrate公式ドキュメントを使ったRAG（Retrieval-Augmented
 + ①〜⑤がすべて緑色になったら完了です。「Open Chat Playground」をクリックして作成されたRAG検索ツールを触ってみましょう
 ![ciq18のスクリーンショット](../images/ciq18.png)
 
-#### ステップ2: RAG検索ツールのテスト
+#### ステップ2: RAG検索ツールのテスト ContentIQ編
 
 watsonx OrchestrateのADKのインストールに関する質問をします。
 
@@ -81,7 +81,43 @@ ADKをアクティブにするためのコマンドを教えてください
 
 ![ciq20のスクリーンショット](../images/ciq20.png)
 
+#### ステップ3: RAG検索ツールのテスト watsonx Orchestrate編
 
++ watsonx Orchestrateで `it_support_agent_XX` のビルド画面を開きます(左上のハンバーガーメニュー → Build → `it_support_agent_XX`)
+
++ `Toolset` に `symplisticai_tool_it_support_agent_XX_ご自身のメールアドレス` が作成されていることを確認します
+
+![ciq21のスクリーンショット](../images/ciq21.png)
+
++ `Behavior` にContentIQに関する記述を追加します
+```
+例: 
+
+## 利用可能なコラボレーター
+**symplisticai_tool_it_support_agent_mika_funato_ibm_com**: watsonx Orchestrate ADKのドキュメントを格納したRAG
+   - 用途: watsonx Orchestrate ADKに関する質問への回答
+   - 対応範囲: watsonx Orchestrate ADK
+```
+※最初に作成したエージェントの設定によって、Behaviorの記述が異なります。ご自身のエージェントに合わせた記述に修正いただく必要がある場合があります。
+
+![ciq22のスクリーンショット](../images/ciq22.png)
+
++ モデルが `GPT-OSS 120B - OpenAI(via Groq)`になっていることを確認し、チャットをリフレッシュします
+
++ watsonx OrchestrateのADKのインストールに関する質問をします。
+```
+例: 
+ADKのインストールに必要な、前提条件を教えてください
+ADKをアクティブにするためのコマンドを教えてください
+```
+
++ `Show Reasoning` をクリックします
+
+![ciq23のスクリーンショット](../images/ciq23.png)
+
++ `Step1`をクリックすると回答の根拠を確認することができます。`symplisticai_tool_it_support_agent_mika_funato_ibm_com`を使用して回答していることがわかります
+
+![ciq24のスクリーンショット](../images/ciq24.png)
 
 
 ---
