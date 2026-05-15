@@ -106,24 +106,25 @@ type Users\user1\.config\orchestrate\config.yaml
 
 ---
 
-### ステップ2: uvパッケージマネージャーのインストール
+### ステップ2: MCPサーバー実行環境のセットアップ
 
-uvは、Pythonパッケージとプロジェクトを管理するための高速なツールです。以下のコマンドでインストールします：
+watsonx Orchestrate ADK MCPサーバーを実行するには、以下のいずれかの方法を選択できます：
 
-#### macOS / Linux:
+#### 方法1: uvx（推奨）
 
+uvは、Pythonパッケージとプロジェクトを管理するための高速なツールです。
+
+**macOS / Linux:**
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-#### Windows (PowerShell):
-
+**Windows (PowerShell):**
 ```powershell
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-#### インストールの確認:
-
+**インストールの確認:**
 ```bash
 uv --version
 ```
@@ -135,20 +136,73 @@ uv 0.x.x
 
 > 💡 **ヒント:** ターミナルを再起動して、PATHが正しく設定されていることを確認してください。
 
+#### 方法2: pipx（uvの代替）
+
+pipxは、Pythonアプリケーションを隔離環境で実行するツールです。uvがインストールできない場合に使用できます。
+
+**インストール:**
+```bash
+pip install pipx
+pipx ensurepath
+```
+
+**インストールの確認:**
+```bash
+pipx --version
+```
+
+> 💡 **注意:** pipxを使用する場合は、後述の設定ファイルで`uvx`を`pipx run`に置き換えてください。
+
+#### 方法3: pip + 仮想環境（手動管理）
+
+標準的なpipと仮想環境を使用する方法です。
+
+**仮想環境の作成:**
+```bash
+python -m venv .venv
+```
+
+**仮想環境の有効化:**
+
+macOS / Linux:
+```bash
+source .venv/bin/activate
+```
+
+Windows (PowerShell):
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Windows (コマンドプロンプト):
+```cmd
+.venv\Scripts\activate.bat
+```
+
+**MCPサーバーのインストール:**
+```bash
+pip install ibm-watsonx-orchestrate-mcp-server
+```
+
+> 💡 **注意:** この方法を使用する場合は、後述の設定ファイルで`command`を`ibm-watsonx-orchestrate-mcp-server`に変更し、`args`を削除してください。
+
+#### どの方法を選ぶべきか？
+
+- **uvx（推奨）**: 最も簡単で高速。自動的に隔離環境を管理
+- **pipx**: uvがインストールできない環境での代替
+- **pip + 仮想環境**: 既存のPython環境を活用したい場合
+
+> 📖 **詳細情報:** 各インストール方法の詳細は、[公式ドキュメント](https://developer.watson-orchestrate.ibm.com/mcp_server/wxOmcp_installation)を参照してください。
+
 ---
 
 ### ステップ3: MCP設定ファイルの作成
 
-#### 3.1 設定ファイルの配置場所
+#### 3.1 設定ファイルの作成
 
-BobはVSCodeベースのIDEなので、以下のいずれかの場所に設定ファイルを作成します：
+`Users/user1/.bob/setting/mcp_setting.json`に、以下の内容をコピー＆ペーストします：
 
-- **推奨:** `.bob/mcp.json`（Bob専用）
-- **代替:** `.vscode/mcp.json`（VSCode互換）
-
-#### 3.2 設定ファイルの作成
-
-ワークスペースのルートディレクトリに`.bob/mcp.json`ファイルを作成し、以下の内容を記述します：
+**方法1: uvxを使用する場合（推奨）**
 
 ```json
 {
@@ -176,6 +230,66 @@ BobはVSCodeベースのIDEなので、以下のいずれかの場所に設定�
     }
 }
 ```
+
+**方法2: pipxを使用する場合**
+
+```json
+{
+    "servers": {
+        "wxo-mcp": {
+            "command": "pipx",
+            "args": [
+                "run",
+                "--spec",
+                "ibm-watsonx-orchestrate==1.13.0",
+                "ibm-watsonx-orchestrate-mcp-server"
+            ],
+            "env": {
+                "WXO_MCP_WORKING_DIRECTORY": "/Users/your-username/your-workspace"
+            }
+        },
+        "wxo-docs": {
+            "command": "pipx",
+            "args": [
+                "run",
+                "mcp-proxy",
+                "--transport",
+                "streamablehttp",
+                "https://developer.watson-orchestrate.ibm.com/mcp"
+            ]
+        }
+    }
+}
+```
+
+**方法3: pip + 仮想環境を使用する場合**
+
+仮想環境を有効化した状態で、以下の設定を使用します：
+
+```json
+{
+    "servers": {
+        "wxo-mcp": {
+            "command": "ibm-watsonx-orchestrate-mcp-server",
+            "args": [],
+            "env": {
+                "WXO_MCP_WORKING_DIRECTORY": "/Users/your-username/your-workspace"
+            }
+        },
+        "wxo-docs": {
+            "command": "uvx",
+            "args": [
+                "mcp-proxy",
+                "--transport",
+                "streamablehttp",
+                "https://developer.watson-orchestrate.ibm.com/mcp"
+            ]
+        }
+    }
+}
+```
+
+> ⚠️ **重要:** 方法3を使用する場合は、Bobを起動する前に仮想環境を有効化しておく必要があります。
 
 #### 3.3 設定内容の説明
 
@@ -275,12 +389,15 @@ watsonx Orchestrate ADKのドキュメントで「agent」について検索し�
 
 ### 問題1: MCPサーバーが起動しない
 
-**原因:** uvがインストールされていない、またはPATHが設定されていない
+**原因:** uvx/pipxがインストールされていない、またはPATHが設定されていない
 
 **解決策:**
-1. ターミナルで `uv --version` を実行して、uvがインストールされているか確認
-2. インストールされていない場合は、[ステップ2](#ステップ2-uvパッケージマネージャーのインストール)を実行
+1. 使用しているコマンドのバージョンを確認
+   - uvxの場合: `uv --version`
+   - pipxの場合: `pipx --version`
+2. インストールされていない場合は、[ステップ2](#ステップ2-mcpサーバー実行環境のセットアップ)を実行
 3. ターミナルを再起動してPATHを更新
+4. それでも解決しない場合は、[方法3（pip + 仮想環境）](#ステップ2-mcpサーバー実行環境のセットアップ)を試してください
 
 ### 問題2: ファイルアクセスエラー
 
