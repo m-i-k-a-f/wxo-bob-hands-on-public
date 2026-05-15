@@ -47,11 +47,11 @@ watsonx Orchestrate公式ドキュメントを使ったRAG（Retrieval-Augmented
 + ①URLを入力し、②「Continue」をクリック
 ![ciq13のスクリーンショット](../images/ciq13.png)
 
-+ 今回は先ほど作成した「IT Support Agent」にRAGとして追加するため、①「Use Existing Agent」にチェックを入れ、②「Continue」をクリック.  
++ 今回は先ほど作成した `it_support_agent_XX` にRAGとして追加するため、①「Use Existing Agent」にチェックを入れ、②「Continue」をクリック.  
 ※「Create New Agent」から、この画面で新しくエージェントを作ることもできます。
 ![ciq14のスクリーンショット](../images/ciq14.png)
 
-+ ①「it_support_agent」を選択し、②「Continue」をクリック
++ ①「it_support_agent_XX」を選択し、②「Continue」をクリック
 ![ciq15のスクリーンショット](../images/ciq15.png)
 
 + 「Finish & Connect」をクリックし、スクレイピング等を実行します

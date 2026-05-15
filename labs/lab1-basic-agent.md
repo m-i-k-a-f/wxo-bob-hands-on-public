@@ -93,10 +93,10 @@ it-support/
 #### 4.1. ターミナルでコマンドを実行
 
 ```bash
-orchestrate env activate wxo-aws
+orchestrate env activate wxo-adk
 ```
 
-> **⚠️ 注意:** 環境名（`wxo-aws`）は、自身のwatsonx Orchestrate環境に合わせて変更すること。
+> **⚠️ 注意:** 環境名（`wxo-adk`）は、自身のwatsonx Orchestrate環境に合わせて変更すること。
 
 #### 4.2. API keyの入力
 
@@ -104,7 +104,7 @@ API keyの入力を求められるので入力し、Enterキーを押す。
 
 #### 4.3. 有効化の確認
 
-`[INFO] - Environment 'wxo-aws' is now active` と表示されたら有効化完了です。
+`[INFO] - Environment 'wxo-adk' is now active` と表示されたら有効化完了です。
 
 ---
 
