@@ -1,8 +1,6 @@
-# watsonx Orchestrate 環境構築ガイド
+# watsonx Orchestrate/IBM Bob/ContentIQ ハンズオンガイド
 
-IBM Bob と watsonx Orchestrate の開発環境をセットアップします。
-
----
+このガイドでは、各製品のセットアップ手順とハンズオンラボを提供します。
 
 ## 📋 目次
 
@@ -10,7 +8,7 @@ IBM Bob と watsonx Orchestrate の開発環境をセットアップします。
 - [セットアップ手順](#セットアップ手順)
   - [1. IBM Bobのセットアップ](#1-ibm-bobのセットアップ)
   - [2. watsonx Orchestrateのセットアップ](#2-watsonx-orchestrateのセットアップ)
-  - [3. MCP統合のセットアップ](#3-mcp統合のセットアップ)
+  - [3. MCPサーバー接続のセットアップ](#3-mcpサーバー接続のセットアップ)
   - [4. ContentIQのセットアップ](#4-contentiqのセットアップ)
 - [ハンズオンラボ](#ハンズオンラボ)
   - [Lab 1: IT Support Agentの実装とデプロイ](#lab-1-it-support-agentの実装とデプロイ)
@@ -24,13 +22,13 @@ IBM Bob と watsonx Orchestrate の開発環境をセットアップします。
 
 ### 環境構築の目的
 
-このガイドでは、watsonx Orchestrateを使ったAIエージェント開発に必要な環境を構築します。
+このガイドでは、watsonx Orchestrateを使ったAIエージェント開発とContentIQでのRAG実装に必要な環境を構築します。
 
 ### セットアップする環境
 
 - ✅ IBM Bob（AI開発アシスタント）
 - ✅ watsonx Orchestrate（AIエージェントプラットフォーム）
-- ✅ MCP（Model Context Protocol）統合
+- ✅ MCP（Model Context Protocol）サーバー接続
 - ✅ ContentIQ（RAGシステム用）
 
 ## セットアップ手順
@@ -51,7 +49,7 @@ watsonx Orchestrateの環境を準備し、ADK（Agent Development Kit）をイ�
 
 ---
 
-### 3. MCP統合のセットアップ
+### 3. MCPサーバー接続のセットアップ
 
 Model Context Protocol (MCP) を使ってBobとwatsonx Orchestrateを統合します。
 
@@ -101,7 +99,3 @@ Lab 1で使用するITサポートエージェントの仕様書です。
 - [MCP in Bob](https://bob.ibm.com/docs/ide/configuration/mcp/mcp-in-bob)
 - [Model Context Protocol 公式サイト](https://modelcontextprotocol.io/)
 - [IBM Cloud](https://cloud.ibm.com/)
-
----
-
-© 2026 IBM watsonx Orchestrate セットアップガイド
