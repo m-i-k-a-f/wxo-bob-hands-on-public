@@ -8,6 +8,7 @@ watsonx Orchestrateの環境構築を行います。
 
 - [watsonx Orchestrateとは](#watsonx-orchestrateとは)
 - [IBM Cloudアカウントの作成](#ibm-cloudアカウントの作成)
+- [インスタンスの作成ガイド](#インスタンスの作成ガイド)
 - [watsonx Orchestrateの起動確認](#watsonx-orchestrateの起動確認)
 - [watsonx Orchestrate ADKのセットアップ](#watsonx-orchestrate-adkのセットアップ)
 - [次のステップ](#次のステップ)
@@ -45,50 +46,54 @@ watsonx Orchestrateは、IBMが提供するAIオーケストレーションプ�
 2. ダッシュボードが表示されることを確認します
 3. 右上のアカウント名をクリックして、アカウント情報に間違いがないか確認します
 
+   ![アカウント名](../images/ibmcloud.png)
 ---
 
 ## インスタンスの作成ガイド
 
+このガイドでは、以下の内容が詳しく説明されています：
+
 **URL:** [https://ibm.github.io/japan-technology/onboarding-docs/watsonx-orchestrate/01_instance/01_ibmcloud_login](https://ibm.github.io/japan-technology/onboarding-docs/watsonx-orchestrate/01_instance/01_ibmcloud_login)
 
-+ サブスクリプションコードの適用
-+ リソースグループの作成
-+ インスタンスの作成
-+ アクセス・グループの作成
-+ アクセス・グループユーザーの追加(管理者以外のIBMidを追加)
+- サブスクリプションコードの適用
+- リソースグループの作成
+- インスタンスの作成
+- アクセス・グループの作成
+- アクセス・グループユーザーの追加(管理者以外のIBMidを追加)
 
 ## watsonx Orchestrateの起動確認
 
 ### 手順
 
-1. IBM Cloudホームにアクセスします
+1. [IBM Cloud](https://cloud.ibm.com/login)にアクセスします
+
 2. ①ハンバーガーメニューから②「リソースリスト」をクリックします
 
-   ![IBM Cloudリソースリスト](../images/wxo1.png)
+   ![wxo1](../images/wxo1.png)
 
 3. ①「AI/機械学習」のプルダウンをクリック、②「watsonx Orchestrate」をクリックします
 
-   ![watsonx Orchestrate リスト](../images/wxo2.png)
+   ![wxo2](../images/wxo2.png)
 
-4. ①資格情報の「APIキー」と「URL」を控え、②「watsonx Orchestrateを起動」をクリックします
+4. ①資格情報の「APIキー」と「URL」をいつでもコピー&ペーストができるように控えておきます。②「watsonx Orchestrateを起動」をクリックします
 
-   ![watsonx Orchestrate 起動画面](../images/wxo3.png)
+   ![wxo3](../images/wxo3.png)
 
 5. watsonx Orchestrateが起動します。画面の言語を日本語に変えるために、①右上のプロフィールから、②「Setting」をクリックします
 
-   ![watsonx Orchestrate 設定画面](../images/wxo4.png)
+   ![wxo4](../images/wxo4.png)
 
 6. ①「Platform Language」をクリック、②「Add language」のプルダウンをクリックし、③「日本語」をクリックします
 
-   ![watsonx Orchestrate 設定画面](../images/wxo5.png)
+   ![wxo5](../images/wxo5.png)
 
 7. Saveし、①「English」のプルダウンをクリック、日本語をクリックしてApplyしたら完了です
 
-   ![watsonx Orchestrate 設定画面](../images/wxo6.png)
+   ![wxo6](../images/wxo6.png)
 
-8. 「APIの詳細」からも資格情報を取得することができます
+8. 「APIの詳細」からも資格情報(APIキーとURL)を取得することができます
 
-   ![watsonx Orchestrate 設定画面](../images/wxo7.png)
+   ![wxo7](../images/wxo7.png)
 
 ---
 
@@ -112,7 +117,7 @@ watsonx Orchestrate ADK（Agent Development Kit）は、エージェントを開
 
 **注意事項：**
 - ADKのインストールには、watsonx Orchestrateの有効なアカウントが必要です
-- APIキーは前のセクションで取得したものを使用してください
+- APIキーは前のセクション[watsonx Orchestrateの起動確認](#watsonx-orchestrateの起動確認)で取得したものを使用してください
 
 ---
 
