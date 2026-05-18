@@ -1,6 +1,6 @@
 # ContentIQセットアップガイド
 
-ナレッジベース構築を行います。
+ContentIQの環境構築を行います。
 
 ---
 
@@ -15,13 +15,12 @@
 
 ## ContentIQとは
 
-ContentIQは、symplistick.aiが提供する、RAG構築ソリューションです。
+ContentIQは、symplistic.aiが提供する、RAG構築ソリューションです。
 
 ### 主な機能
 
 - ✅ 自然言語による高度な検索
 - ✅ ドキュメント理解とエンティティ抽出
-- ✅ パッセージ検索とランキング
 - ✅ 多言語サポート
 
 ---
@@ -56,36 +55,31 @@ watsonx OrchestrateをContentIQに置き換えて、インスタンスを作成�
 
 1. ContentIQのHomeから、「Administrative Setting」をクリックします
 
-   ![ContentIQ Home](../images/ciq1.png)
+   ![ciq1](../images/ciq1.png)
 
 2. 「Role Setting」では「Administrator」や「Member」など権限のレベルを設定できます
 
-   ![ContentIQ Home](../images/ciq2.png)
+   ![ciq2](../images/ciq2.png)
 
 3. 「Account Assignments」ではメンバーの追加や削除ができます。新規追加をするには、「Add New User」をクリックします
 
-   ![ContentIQ Home](../images/ciq3.png)
+   ![ciq3](../images/ciq3.png)
 
 4. メールアドレスを入力し、適切なRoleを割り当てて「invite User」をクリックします
 
-   ![ContentIQ Home](../images/ciq4.png)
+   ![ciq4](../images/ciq4.png)
 
 5. 追加したメンバーにはメールが届きます。24時間以内にActivateする必要があります
 
-   ![ContentIQ Home](../images/ciq5.png)
+   ![ciq5](../images/ciq5.png)
 
 ### watsonx Orchestrateの設定
 
-1. ①「Setting」をクリック、②「watsonx Orchestrate」をクリックします。watsonx Orchestrateのセットアップで控えた、資格情報(URL、APIキー)を入力します
++ ①「Setting」をクリック、②「watsonx Orchestrate」をクリックします。watsonx Orchestrateのセットアップで控えた、資格情報(URL、APIキー)を入力します
 
-   ![ContentIQ Home](../images/ciq6.png)
+   ![ciq6](../images/ciq6.png)
 ---
 
-## セットアップ完了
-
-### 🎉 おめでとうございます！
-
-すべての環境構築が完了しました。
 
 ### セットアップした環境
 
@@ -97,6 +91,8 @@ watsonx OrchestrateをContentIQに置き換えて、インスタンスを作成�
 ### 💡 次のステップ
 
 これで、IBM BobとwatsonX Orchestrateを使ったAIエージェント開発の準備が整いました。実際のエージェント開発を始めることができます。
+
+➡️ **[Lab 1: IT Support Agent の実装とデプロイ](#labs/lab1-it-support-agent.md)**
 
 ---
 
