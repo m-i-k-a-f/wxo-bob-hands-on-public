@@ -37,7 +37,7 @@
 
 IBM Bobは、AI開発アシスタントです。
 
-📖 **[詳細ガイドを見る →](setup_md/bob-setup.md)**
+📖 **[詳細ガイドを見る →](setup_md/01_bob-setup.md)**
 
 ---
 
@@ -45,7 +45,7 @@ IBM Bobは、AI開発アシスタントです。
 
 watsonx Orchestrateの環境を準備し、ADK（Agent Development Kit）をインストールします。
 
-📖 **[詳細ガイドを見る →](setup_md/orchestrate-setup.md)**
+📖 **[詳細ガイドを見る →](setup_md/02_orchestrate-setup.md)**
 
 ---
 
@@ -61,7 +61,7 @@ Model Context Protocol (MCP) を使ってBobとwatsonx Orchestrateを統合し�
 
 ContentIQを使ってRAGシステムを構築します。
 
-📖 **[詳細ガイドを見る →](setup_md/contentiq-setup.md)**
+📖 **[詳細ガイドを見る →](setup_md/04_contentiq-setup.md)**
 
 ---
 

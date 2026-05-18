@@ -1,6 +1,6 @@
 # watsonx Orchestrateセットアップガイド
 
-AIオーケストレーションプラットフォームの環境構築を行います。
+watsonx Orchestrateの環境構築を行います。
 
 ---
 

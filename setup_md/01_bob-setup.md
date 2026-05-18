@@ -1,6 +1,6 @@
 # IBM Bobセットアップガイド
 
-AI開発アシスタントの環境構築を行います。
+IBM Bobの環境構築を行います。
 
 ---
 
@@ -14,7 +14,7 @@ AI開発アシスタントの環境構築を行います。
 
 ## IBM Bobとは
 
-IBM Bobは、エンタープライズ向けAIコーディング・エージェントです。組織のイノベーションを加速し、生産性を向上させ、最新のアプリ開発を促進します。
+IBM Bobは、既存のワークフローを拡張し、実際のコードベースで自信を持って作業できるようにするAI SDLC（ソフトウェア開発ライフサイクル）パートナーです。
 
 ### 主な機能
 
@@ -27,7 +27,7 @@ IBM Bobは、エンタープライズ向けAIコーディング・エージェ�
 
 ## セットアップガイド
 
-IBM Bobの詳細なセットアップ手順については、以下の公式ガイドを参照してください。
+IBM Bobの詳細なセットアップ手順については、以下のガイドを参照してください。
 
 ### 📚 IBM Bob セットアップガイド
 
@@ -47,13 +47,13 @@ IBM Bobの詳細なセットアップ手順については、以下の公式ガ�
 
 IBM Bobのセットアップが完了しました。次は、watsonx Orchestrateの環境を構築します。
 
-➡️ **[watsonx Orchestrateセットアップへ](orchestrate-setup.md)**
+➡️ **[watsonx Orchestrateセットアップへ](02_orchestrate-setup.md)**
 
 ---
 
 **ナビゲーション:**
 - [← README に戻る](../README.md)
-- [watsonx Orchestrateセットアップ →](orchestrate-setup.md)
+- [watsonx Orchestrateセットアップ →](02_orchestrate-setup.md)
 
 ---
 
