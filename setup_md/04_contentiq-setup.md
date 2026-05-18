@@ -92,7 +92,7 @@ watsonx OrchestrateをContentIQに置き換えて、インスタンスを作成�
 
 これで、IBM BobとwatsonX Orchestrateを使ったAIエージェント開発の準備が整いました。実際のエージェント開発を始めることができます。
 
-➡️ **[Lab 1: IT Support Agent の実装とデプロイ](#labs/lab1-it-support-agent.md)**
+➡️ **[Lab 1: IT Support Agent の実装とデプロイ](../labs/lab1-it-support-agent.md)**
 
 ---
 
